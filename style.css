@@ -535,10 +535,38 @@
 
 @media (max-width: 650px) {
   /* navbar */
+  .navbar {
+    display: flex;
+    width: auto;
+    padding: 22px 16px 21px 37px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 127px;
+    align-self: stretch;
+    background: #9db1b8;
+  }
+
+  .btn {
+    border-radius: 0;
+    border-color: #164451;
+    color: #164451;
+    display: flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Proza Libre";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0%; /* 0px */
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
 
   /* hero */
   .hero-section {
-    width: 360px;
+    width: auto;
     background-image: url("./img/BANNER (1).png");
     background-size: cover;
     background-position: center;
@@ -606,28 +634,28 @@
 
   .services-section {
     display: flex;
-    width: 360px;
+    width: auto;
     padding: 32px 16px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 32px;
     background: #164451;
-  
+
     .titulo {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-self: stretch;
       gap: 16px;
-  
+
       img {
         width: 40.42px;
         height: 39.353px;
       }
-  
+
       h2 {
-        color: #EEE;
+        color: #eee;
         text-align: center;
         font-family: "Playfair Display";
         font-size: 20px;
@@ -637,11 +665,11 @@
         letter-spacing: -0.22px;
         align-self: stretch;
       }
-  
+
       p {
         width: 328px;
         height: 42px;
-        color: #9DB1B8;
+        color: #9db1b8;
         align-self: stretch;
         text-align: center;
         font-family: "Proza Libre";
@@ -652,7 +680,7 @@
         letter-spacing: -0.154px;
       }
     }
-  
+
     .row {
       display: flex;
       flex-direction: column;
@@ -660,7 +688,7 @@
       align-items: center;
       gap: 20px;
       align-self: stretch;
-  
+
       .col-md-4 {
         display: flex;
         width: 360px;
@@ -670,12 +698,12 @@
       }
       .card-body {
         background-color: #9db1b8;
-  
+
         img {
           height: 219px;
           align-self: stretch;
         }
-  
+
         h5 {
           color: #164451;
           text-align: center;
@@ -685,7 +713,7 @@
           line-height: 102%; /* 24.48px */
           letter-spacing: -0.264px;
         }
-  
+
         p {
           align-self: stretch;
           color: #181818;
@@ -697,7 +725,7 @@
           line-height: 102%; /* 16.32px */
           letter-spacing: -0.176px;
         }
-  
+
         .btn {
           display: flex;
           padding: 10px;
@@ -707,7 +735,7 @@
           background: #164451;
           border: 0.5px solid #164451;
         }
-  
+
         a {
           color: #eee;
           text-align: center;
@@ -720,28 +748,215 @@
       }
     }
   }
-  
 
+  /* section acerca de  */
 
+  .about-section {
+    height: 583px;
+    width: auto;
+    align-self: stretch;
+    background: #9db1b8;
 
+    .container {
+      display: flex;
+      width: 360px;
+      height: 434px;
+      padding: 94px 16px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+      flex-shrink: 0;
 
+      img {
+        width: 40px;
+        height: 40px;
+      }
 
+      h2 {
+        color: #164451;
+        align-self: stretch;
+        text-align: center;
+        font-family: "Playfair Display";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 102%; /* 20.4px */
+        letter-spacing: -0.22px;
+      }
 
+      p {
+        width: 328px;
+        height: 84px;
+        color: #164451;
+        align-self: stretch;
+        text-align: center;
+        font-family: "Proza Libre";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 102%; /* 14.28px */
+        letter-spacing: -0.154px;
+      }
 
+      .btn {
+        display: flex;
+        width: 156px;
+        padding: 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: 0.5px solid #164451;
+      }
 
+      a {
+        color: #eee;
+        width: 165px;
+        flex-shrink: 0;
+        text-align: center;
+        font-family: "Proza Libre";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 0%; /* 0px */
+        letter-spacing: 0.36px;
+        text-transform: uppercase;
+      }
+    }
+  }
 
+  /* testimonios */
 
+  .container-testimonios {
+    width: auto;
+    display: flex;
+    padding: 32px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
 
+    .documentacion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      align-self: stretch;
 
+      img {
+        width: 40.006px;
+        height: 40px;
+      }
+      h2 {
+        color: #eee;
+        text-align: center;
+        font-family: "Playfair Display";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 102%; /* 20.4px */
+        letter-spacing: -0.22px;
+        align-self: stretch;
+      }
 
+      p {
+        width: 328px;
+        height: 84px;
+        color: #9db1b8;
+        align-self: stretch;
+        text-align: center;
+        font-family: "Proza Libre";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 102%; /* 14.28px */
+        letter-spacing: -0.154px;
+      }
+    }
 
+    .swiper-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      align-self: stretch;
 
-   /* politica de privacidad  */
-   .container-privacy {
+      .swiper-slide {
+        display: flex;
+        width: 270px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        border: 0.5px solid #eee;
+        background-color: #164451;
+        img {
+          height: 300px;
+          align-self: stretch;
+          border: 0.5px solid #eee;
+        }
+
+        .card-body {
+          display: flex;
+          padding: 0px 16px 32px 16px;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 8px;
+          align-self: stretch;
+
+          h5 {
+            color: #9db1b8;
+            font-family: "Proza Libre";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 102%; /* 16.32px */
+            letter-spacing: -0.176px;
+            height: 21px;
+            align-self: stretch;
+          }
+          p {
+            color: #eee;
+            font-family: "Proza Libre";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 102%; /* 16.32px */
+            letter-spacing: -0.176px;
+            height: 21px;
+            align-self: stretch;
+          }
+        }
+      }
+    }
+
+    .btn {
+      display: flex;
+      padding: 24px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    button {
+      color: #164451;
+      text-align: center;
+      font-family: "Proza Libre";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 0%; /* 0px */
+      letter-spacing: 0.36px;
+      text-transform: uppercase;
+    }
+  }
+
+  /* politica de privacidad  */
+  .container-privacy {
     width: 100%;
     height: 774px;
     background: #9db1b8;
-  
+
     .row {
       display: flex;
       width: 100%;
@@ -750,19 +965,19 @@
       align-items: center;
       gap: 32px;
       align-self: stretch;
-  
+
       .documentacion {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 16px;
         align-self: stretch;
-  
+
         img {
           width: 32.518px;
           height: 40px;
         }
-  
+
         h2 {
           color: #164451;
           text-align: center;
@@ -773,7 +988,7 @@
           letter-spacing: -0.22px;
           align-self: stretch;
         }
-  
+
         p {
           width: 328px;
           height: 42px;
@@ -789,7 +1004,7 @@
         }
       }
       p {
-        color: #3F3F3F;
+        color: #3f3f3f;
         text-align: center;
         font-family: "Proza Libre";
         font-size: 16px;
@@ -801,8 +1016,6 @@
       }
     }
   }
-  
-
 
   /* footer */
 
@@ -831,7 +1044,7 @@
         gap: 24px;
 
         .list-inline-item {
-          color: #EEE;
+          color: #eee;
           text-align: center;
           font-family: "Proza Libre";
           font-size: 12px;
@@ -849,9 +1062,9 @@
 
       .social-icons {
         display: flex;
-          align-items: center;
-          gap: 24px;
-          align-self: stretch;
+        align-items: center;
+        gap: 24px;
+        align-self: stretch;
 
         a {
           color: #eee;
@@ -879,7 +1092,7 @@
       gap: 8px;
 
       p {
-        color: #EEE;
+        color: #eee;
         text-align: center;
         font-family: "Proza Libre";
         font-size: 14px;
