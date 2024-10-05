@@ -316,61 +316,8 @@
       width: 730px;
     }
   }
+  
 
-  .swiper-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    align-self: stretch;
-
-    .swiper-slide {
-      display: flex;
-      width: 270px;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 24px;
-      border: 0.5px solid #eee;
-      background-color: #164451;
-      img {
-        height: 300px;
-        align-self: stretch;
-        border: 0.5px solid #eee;
-      }
-
-      .card-body {
-        display: flex;
-        padding: 0px 16px 32px 16px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-        align-self: stretch;
-
-        h5 {
-          color: #9db1b8;
-          font-family: "Proza Libre";
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 102%; /* 16.32px */
-          letter-spacing: -0.176px;
-          height: 21px;
-          align-self: stretch;
-        }
-        p {
-          color: #eee;
-          font-family: "Proza Libre";
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 102%; /* 16.32px */
-          letter-spacing: -0.176px;
-          height: 21px;
-          align-self: stretch;
-        }
-      }
-    }
-  }
 
   .btn {
     display: flex;
@@ -557,7 +504,6 @@
     text-align: center;
     font-family: "Proza Libre";
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 0%; /* 0px */
     letter-spacing: 0.42px;
@@ -1005,7 +951,6 @@
           line-height: 102%; /* 14.28px */
           letter-spacing: -0.154px;
           align-self: stretch;
-      
         }
       }
       p {
