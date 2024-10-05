@@ -756,6 +756,9 @@
     width: auto;
     align-self: stretch;
     background: #9db1b8;
+    background-image: url("./img/Acerca\ de\ mobile.png");
+    background-size: cover;
+    background-position: center;
 
     .container {
       display: flex;
@@ -841,7 +844,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 16px;
+      gap: 10px;
       align-self: stretch;
 
       img {
@@ -953,7 +956,7 @@
 
   /* politica de privacidad  */
   .container-privacy {
-    width: 100%;
+    width: auto;
     height: 774px;
     background: #9db1b8;
 
@@ -972,6 +975,7 @@
         align-items: center;
         gap: 16px;
         align-self: stretch;
+        padding-left: 15px;
 
         img {
           width: 32.518px;
@@ -1001,9 +1005,11 @@
           line-height: 102%; /* 14.28px */
           letter-spacing: -0.154px;
           align-self: stretch;
+      
         }
       }
       p {
+        width: 328px;
         color: #3f3f3f;
         text-align: center;
         font-family: "Proza Libre";
@@ -1013,6 +1019,7 @@
         line-height: 215%; /* 34.4px */
         letter-spacing: -0.176px;
         align-self: stretch;
+        padding-left: 15px;
       }
     }
   }
