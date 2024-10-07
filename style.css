@@ -316,8 +316,45 @@
       width: 730px;
     }
   }
-  
 
+  .carousel-inner {
+    display: flex;
+
+    .card {
+      display: flex;
+      width: 270px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+      border: 0.5px solid #eee;
+      background-color: #164451;
+
+      .card-body {
+        h5 {
+          color: #9db1b8;
+          height: 21px;
+          align-self: stretch;
+          font-family: "Proza Libre";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 102%; /* 16.32px */
+          letter-spacing: -0.176px;
+        }
+        p {
+          color: #eee;
+          font-family: "Proza Libre";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 102%; /* 16.32px */
+          letter-spacing: -0.176px;
+          height: 21px;
+          align-self: stretch;
+        }
+      }
+    }
+  }
 
   .btn {
     display: flex;
@@ -325,15 +362,15 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    background: #e4b949;
   }
 
-  button {
+  .btn button {
     display: flex;
     padding: 24px;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background: #e4b949;
     color: #164451;
   }
 }
@@ -491,6 +528,23 @@
     gap: 127px;
     align-self: stretch;
     background: #9db1b8;
+  }
+  
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column; /* Hacer que los elementos de la lista se apilen */
+    align-items: center; /* Centrar los enlaces */
+    width: 100%; /* Asegúrate de que ocupe todo el ancho */
+  }
+
+
+  .navbar-nav {
+    width: 100%; /* Asegúrate de que ocupe todo el ancho */
+    display: flex;
+    flex-direction: column; /* Apilar los elementos de la lista */
+    align-items: center; /* Centrar los enlaces */
+    margin: 0; /* Eliminar margen */
+    padding: 0; /* Eliminar padding */
   }
 
   .btn {
@@ -824,51 +878,36 @@
       }
     }
 
-    .swiper-wrapper {
+    .carousel-inner {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 20px;
       align-self: stretch;
 
-      .swiper-slide {
+      .card {
         display: flex;
-        width: 270px;
         flex-direction: column;
         align-items: flex-start;
         gap: 24px;
         border: 0.5px solid #eee;
         background-color: #164451;
-        img {
-          height: 300px;
-          align-self: stretch;
-          border: 0.5px solid #eee;
-        }
 
         .card-body {
-          display: flex;
-          padding: 0px 16px 32px 16px;
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 8px;
-          align-self: stretch;
-
           h5 {
             color: #9db1b8;
+            height: 21px;
+            align-self: stretch;
             font-family: "Proza Libre";
-            font-size: 16px;
-            font-style: normal;
+            font-size: 12px;
             font-weight: 400;
             line-height: 102%; /* 16.32px */
             letter-spacing: -0.176px;
-            height: 21px;
-            align-self: stretch;
           }
           p {
             color: #eee;
             font-family: "Proza Libre";
-            font-size: 16px;
-            font-style: normal;
+            font-size: 12px;
             font-weight: 500;
             line-height: 102%; /* 16.32px */
             letter-spacing: -0.176px;
@@ -885,9 +924,10 @@
       justify-content: center;
       align-items: center;
       gap: 10px;
+      background-color: #e4b949;
     }
 
-    button {
+    .btn button {
       color: #164451;
       text-align: center;
       font-family: "Proza Libre";
