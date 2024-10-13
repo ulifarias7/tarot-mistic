@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  box-sizing: border-box;
+}
 
 /* navbar */
 .navbar {
@@ -239,7 +242,6 @@
     }
 
     p {
-      width: 730px;
       color: #164451;
       text-align: center;
       font-family: "Proza Libre";
@@ -273,14 +275,11 @@
 
 /* testimonios */
 
-.container-testimonios {
-  display: flex;
-  width: 100%;
-  padding: 94px 150px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
+.testimonios {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   background: #164451;
 
   .documentacion {
@@ -313,46 +312,6 @@
       font-weight: 400;
       line-height: 102%; /* 16.32px */
       letter-spacing: -0.176px;
-      width: 730px;
-    }
-  }
-
-  .carousel-inner {
-    display: flex;
-
-    .card {
-      display: flex;
-      width: 270px;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 24px;
-      border: 0.5px solid #eee;
-      background-color: #164451;
-
-      .card-body {
-        h5 {
-          color: #9db1b8;
-          height: 21px;
-          align-self: stretch;
-          font-family: "Proza Libre";
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 102%; /* 16.32px */
-          letter-spacing: -0.176px;
-        }
-        p {
-          color: #eee;
-          font-family: "Proza Libre";
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 102%; /* 16.32px */
-          letter-spacing: -0.176px;
-          height: 21px;
-          align-self: stretch;
-        }
-      }
     }
   }
 
@@ -375,11 +334,95 @@
   }
 }
 
+.testimonial-slider {
+  max-width: 1242px;
+  margin: 0 auto;
+  margin-bottom: 60px !important;
+  padding: 0 20px;
+}
+
+.testimonials {
+  text-align: center;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.quote-wrapper {
+  background-color: #164451;
+  border: 0.5px #eeeeee solid;
+  margin: 0 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quote-wrapper img {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.quote-wrapper .client {
+  padding: 1rem;
+}
+
+.quote-wrapper .client .author {
+  color: #9db1b8;
+  font-size: 16px;
+  font-family: Proza Libre;
+  font-weight: 400;
+  line-height: 16.32px;
+}
+
+.quote-wrapper .client .service {
+  color: #eeeeee;
+  font-size: 16px;
+  font-family: Proza Libre;
+  font-weight: 500;
+  line-height: 16.32px;
+}
+
+.slick-prev,
+.slick-next {
+  background-color: transparent;
+  border: none;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  font-size: 24px;
+  color: #e4b949;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+  .quote-wrapper {
+    margin: 0 5px;
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-slider {
+    padding: 0 10px;
+  }
+
+  .quote-wrapper {
+    margin: 0 5px;
+    padding: 1rem;
+  }
+
+  .quote-wrapper img {
+    margin-bottom: 0.5rem;
+  }
+}
+
 /* politica de privacida */
 
 .container-privacy {
-  width: 100%;
-  height: 800px;
   background: #9db1b8;
 
   .row {
@@ -421,7 +464,6 @@
         font-weight: 400;
         line-height: 102%; /* 16.32px */
         letter-spacing: -0.176px;
-        width: 620px;
       }
     }
     p {
@@ -439,7 +481,6 @@
 
 .footer {
   display: flex;
-  width: 100%;
   padding: 80px 130px;
   flex-direction: column;
   align-items: flex-start;
@@ -492,7 +533,7 @@
   }
 
   .divider {
-    width: 1142px;
+    width: 100%;
     height: 1px;
     background: #eee;
   }
@@ -529,14 +570,13 @@
     align-self: stretch;
     background: #9db1b8;
   }
-  
+
   .navbar-collapse {
     display: flex;
     flex-direction: column; /* Hacer que los elementos de la lista se apilen */
     align-items: center; /* Centrar los enlaces */
     width: 100%; /* Asegúrate de que ocupe todo el ancho */
   }
-
 
   .navbar-nav {
     width: 100%; /* Asegúrate de que ocupe todo el ancho */
@@ -762,7 +802,6 @@
 
     .container {
       display: flex;
-      width: 360px;
       height: 434px;
       padding: 94px 16px;
       flex-direction: column;
@@ -789,7 +828,6 @@
       }
 
       p {
-        width: 328px;
         height: 84px;
         color: #164451;
         align-self: stretch;
@@ -830,23 +868,17 @@
 
   /* testimonios */
 
-  .container-testimonios {
-    width: auto;
-    display: flex;
-    padding: 32px 16px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    align-self: stretch;
+  .testimonios {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     .documentacion {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 10px;
-      align-self: stretch;
-
       img {
         width: 40.006px;
         height: 40px;
@@ -864,8 +896,6 @@
       }
 
       p {
-        width: 328px;
-        height: 84px;
         color: #9db1b8;
         align-self: stretch;
         text-align: center;
@@ -980,7 +1010,6 @@
         }
 
         p {
-          width: 328px;
           height: 42px;
           color: #164451;
           text-align: center;
@@ -994,7 +1023,6 @@
         }
       }
       p {
-        width: 328px;
         color: #3f3f3f;
         text-align: center;
         font-family: "Proza Libre";
@@ -1073,7 +1101,7 @@
     }
 
     .divider {
-      width: 328px;
+      width: 100%;
       height: 1px;
       background: #eee;
     }
