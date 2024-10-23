@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/group-1.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="img/group-1.png" sizes="16x16">
     <!-- bosstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -30,6 +33,14 @@
       href="https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
+
+    <!-- carousel -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
     <!-- css -->
     <link rel="stylesheet" href="style.css" />
     <title>Tarot</title>
@@ -171,8 +182,8 @@
     <!-- testimonios -->
 
     <section id="testimonios">
-      <div class="container-testimonios">
-        <div class="documentacion">
+      <div class="testimonios">
+        <div class="documentacion mb-4">
           <img src="./img/testimonios icono.png" alt="" />
           <h2>Testimonios</h2>
           <p>
@@ -185,129 +196,62 @@
         </div>
 
         <!-- Carrusel de testimonios -->
-        <div
-          id="carouselTestimonios"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <!-- Primera slide con tres tarjetas -->
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card" style="width: 18rem">
-                    <img
-                      src="./img/baba1.jpg"
-                      class="card-img-top"
-                      alt="Testimonio 1"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Maria Lopez, 34 años</h5>
-                      <p class="card-text">Lectura de Tarot</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card" style="width: 18rem">
-                    <img
-                      src="./img/baba2.jpg"
-                      class="card-img-top"
-                      alt="Testimonio 2"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Maria Lopez, 34 años</h5>
-                      <p class="card-text">Lectura de Tarot</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card" style="width: 18rem">
-                    <img
-                      src="./img/baba3.jpg"
-                      class="card-img-top"
-                      alt="Testimonio 3"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Maria Lopez, 34 años</h5>
-                      <p class="card-text">Lectura de Tarot</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Segunda slide con tres tarjetas -->
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card" style="width: 18rem">
-                    <img
-                      src="./img/baba4.jpg"
-                      class="card-img-top"
-                      alt="Testimonio 4"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Maria Lopez, 34 años</h5>
-                      <p class="card-text">Lectura de Tarot.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card" style="width: 18rem">
-                    <img
-                      src="./img/baba5.jpg"
-                      class="card-img-top"
-                      alt="Testimonio 5"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Maria Lopez, 34 años</h5>
-                      <p class="card-text">Lectura de Tarot</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card" style="width: 18rem">
-                    <img
-                      src="./img/baba6.jpg"
-                      class="card-img-top"
-                      alt="Testimonio 6"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Maria Lopez, 34 años</h5>
-                      <p class="card-text">Lectura de Tarot</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div class="testimonial-slider">
+          <div class="quote-wrapper card-testimonial">
+            <img src="./img/baba1.jpg" alt="">
+            <div class="client">
+              <p class="author">Maria Lopez, 34 años</p>
+              <p class="service">Lectura de Tarot</p>
             </div>
           </div>
-
-          <!-- Botones de control del carrusel -->
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselTestimonios"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselTestimonios"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-          </button>
+          <div class="quote-wrapper card-testimonial">
+            <img src="./img/baba2.jpg" alt="">
+            <div class="client">
+              <p class="author">Maria Lopez, 34 años</p>
+              <p class="service">Lectura de Tarot</p>
+            </div>
+    
+          </div>
+          <div class="quote-wrapper card-testimonial">
+            <img src="./img/baba3.jpg" alt="">
+            <div class="client">
+              <p class="author">Maria Lopez, 34 años</p>
+              <p class="service">Lectura de Tarot</p>
+            </div>
+    
+          </div>
+          <div class="quote-wrapper card-testimonial">
+            <img src="./img/baba4.jpg" alt="">
+            <div class="client">
+              <p class="author">Maria Lopez, 34 años</p>
+              <p class="service">Lectura de Tarot</p>
+            </div>
+    
+          </div>
+          <div class="quote-wrapper card-testimonial">
+            <img src="./img/baba5.jpg" alt="">
+            <div class="client">
+              <p class="author">Maria Lopez, 34 años</p>
+              <p class="service">Lectura de Tarot</p>
+            </div>
+    
+          </div>
+          <div class="quote-wrapper card-testimonial">
+            <img src="./img/baba6.jpg" alt="">
+            <div class="client">
+              <p class="author">Maria Lopez, 34 años</p>
+              <p class="service">Lectura de Tarot</p>
+            </div>
+    
+          </div>
         </div>
-
         <!-- Botón para reservar -->
-        <div class="text-center mt-4">
+        <div class="text-center mt-6" style="
+        display: flex;
+        justify-content: center;
+    ">
           <button class="btn btn-primary">Reserva tu consulta</button>
         </div>
-      </div>
     </section>
 
     <!-- politica de privacidad -->
@@ -372,5 +316,7 @@
       integrity="sha384-mQ93QzZCWlR4gg7YrsUXA2y++OMz1s5Fp7Vg4I5ih0PVAB9rZBHfQl4wuQ8K4wLA"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
