@@ -438,7 +438,7 @@
       color: white;
       font-family: "Proza Libre";
       font-size: 16px;
-      font-weight: 600;
+      font-weight: 800;
       padding: 12px 24px;
       border-radius: 8px;
       text-decoration: none;
@@ -960,7 +960,7 @@
   /* politica de privacidad  */
   .container-privacy {
     width: auto;
-    height: 774px;
+    height: 350px;
     background: #9db1b8;
 
     .row {
@@ -1010,19 +1010,30 @@
           align-self: stretch;
         }
       }
-      p {
-        width: 328px;
-        color: #3f3f3f;
-        text-align: center;
-        font-family: "Proza Libre";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 215%; /* 34.4px */
-        letter-spacing: -0.176px;
-        align-self: stretch;
-        padding-left: 15px;
-      }
+      .buttom-politica{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+   
+       .btn-descargar {
+         margin-top: 24px;
+         background-color: #164451;
+         color: white;
+         font-family: "Proza Libre";
+         font-size: 16px;
+         font-weight: 800;
+         padding: 12px 24px;
+         border-radius: 8px;
+         text-decoration: none;
+         transition: background-color 0.3s ease;
+         text-align: center;
+       }
+   
+       .btn-descargar:hover {
+         background-color: #0d2f3a;
+       }
+     }
     }
   }
 
