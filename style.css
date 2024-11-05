@@ -35,6 +35,14 @@
   font-family: "Proza Libre";
   letter-spacing: 0.48px;
   font-weight: 400;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #164451;
+  color: white;
+  border-color: #164451;
 }
 
 /* hero */
@@ -85,6 +93,12 @@
       align-items: center;
       gap: 10px;
       background: #164451;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #1b5c6b;
+      transform: scale(1.05);
     }
 
     a {
@@ -193,6 +207,12 @@
         gap: 10px;
         background: #164451;
         border: 0.5px solid #164451;
+        transition: color 0.3s ease;
+      }
+      .btn:hover {
+        background: #1e5a6a;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
       }
 
       a {
@@ -259,6 +279,12 @@
       gap: 10px;
       background: #164451;
       border: 0.5px solid #164451;
+      transition: color 0.3s ease;
+    }
+    .btn:hover {
+      background: #1e5a6a;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
     }
 
     a {
@@ -322,6 +348,12 @@
     align-items: center;
     gap: 10px;
     background: #e4b949;
+    transition: color 0.3s ease;
+  }
+  .btn:hover {
+    background: #606254;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
   }
 
   .btn button {
@@ -469,32 +501,30 @@
       }
     }
 
+    .buttom-politica {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-    .buttom-politica{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     
+      .btn-descargar {
+        margin-top: 24px;
+        background-color: #164451;
+        color: white;
+        font-family: "Proza Libre";
+        font-size: 16px;
+        font-weight: 800;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        text-align: center;
+      }
 
-    .btn-descargar {
-      margin-top: 24px;
-      background-color: #164451;
-      color: white;
-      font-family: "Proza Libre";
-      font-size: 16px;
-      font-weight: 800;
-      padding: 12px 24px;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-      text-align: center;
-    }
-
-    .btn-descargar:hover {
-      background-color: #0d2f3a;
+      .btn-descargar:hover {
+        background-color: #0d2f3a;
+      }
     }
   }
-}
 }
 
 /* footer */
@@ -1042,31 +1072,30 @@
           align-self: stretch;
         }
       }
-      .buttom-politica{
+      .buttom-politica {
         display: flex;
         justify-content: center;
         align-items: center;
         padding-left: 10px;
-        
-   
-       .btn-descargar {
-         margin-top: 24px;
-         background-color: #164451;
-         color: white;
-         font-family: "Proza Libre";
-         font-size: 16px;
-         font-weight: 800;
-         padding: 12px 24px;
-         border-radius: 8px;
-         text-decoration: none;
-         transition: background-color 0.3s ease;
-         text-align: center;
-       }
-   
-       .btn-descargar:hover {
-         background-color: #0d2f3a;
-       }
-     }
+
+        .btn-descargar {
+          margin-top: 24px;
+          background-color: #164451;
+          color: white;
+          font-family: "Proza Libre";
+          font-size: 16px;
+          font-weight: 800;
+          padding: 12px 24px;
+          border-radius: 8px;
+          text-decoration: none;
+          transition: background-color 0.3s ease;
+          text-align: center;
+        }
+
+        .btn-descargar:hover {
+          background-color: #0d2f3a;
+        }
+      }
     }
   }
 
