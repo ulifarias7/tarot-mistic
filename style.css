@@ -225,6 +225,17 @@
         text-transform: uppercase;
       }
     }
+    /* Agregado para animar las tarjetas al pasar el mouse */
+    .service-card {
+      transition: transform 0.3s ease; /* Transición suave */
+    }
+
+    .service-card:hover {
+      transform: scale(
+        1.05
+      ); /* Aumenta el tamaño de la tarjeta al hacer hover */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+    }
   }
 }
 
@@ -238,6 +249,10 @@
   background-image: url("./img/Acerca\ de.png");
   background-size: cover;
   background-position: center;
+
+  .about-section:hover {
+    transform: translateY(-10px);
+  }
 
   .container {
     display: flex;
@@ -269,6 +284,7 @@
       font-weight: 400;
       line-height: 102%;
       letter-spacing: -0.176px;
+      max-width: 800px;
     }
 
     .btn {
@@ -279,11 +295,12 @@
       gap: 10px;
       background: #164451;
       border: 0.5px solid #164451;
-      transition: color 0.3s ease;
+      transition: background 0.3s ease, transform 0.3s ease;
     }
     .btn:hover {
       background: #1e5a6a;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transform: scale(1.05); /* Aumenta ligeramente el botón */
       cursor: pointer;
     }
 
@@ -477,6 +494,16 @@
         width: 43.403px;
         height: 53.39px;
       }
+      @keyframes slideUpFade {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
 
       h2 {
         color: #164451;
@@ -487,6 +514,7 @@
         font-weight: 700;
         line-height: 102%;
         letter-spacing: -0.528px;
+        animation: slideUpFade 1s ease forwards;
       }
 
       p {
@@ -518,9 +546,10 @@
         text-decoration: none;
         transition: background-color 0.3s ease;
         text-align: center;
+        animation: fadeInUp 1s ease forwards;
       }
 
-      .btn-descargar:hover {
+      .buttom-politica .btn-descargar:hover {
         background-color: #0d2f3a;
       }
     }
@@ -559,6 +588,13 @@
         a {
           color: #eee;
           text-decoration: none;
+          transition: transform 0.3s ease, color 0.3s ease,
+            border-color 0.3s ease;
+        }
+        a:hover {
+          transform: scale(1.2);
+          color: #faf770;
+          border-color: #faf770;
         }
       }
     }
@@ -578,6 +614,13 @@
         gap: 10px;
         border: 1px solid #9db1b8;
         text-decoration: none;
+        transition: transform 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+      }
+
+      a:hover {
+        transform: scale(1.2);
+        color: #faf770;
+        border-color: #faf770;
       }
     }
   }
@@ -623,18 +666,18 @@
 
   .navbar-collapse {
     display: flex;
-    flex-direction: column; /* Hacer que los elementos de la lista se apilen */
-    align-items: center; /* Centrar los enlaces */
-    width: 100%; /* Asegúrate de que ocupe todo el ancho */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
   .navbar-nav {
-    width: 100%; /* Asegúrate de que ocupe todo el ancho */
+    width: 100%;
     display: flex;
-    flex-direction: column; /* Apilar los elementos de la lista */
-    align-items: center; /* Centrar los enlaces */
-    margin: 0; /* Eliminar margen */
-    padding: 0; /* Eliminar padding */
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
   }
 
   .btn {
@@ -705,7 +748,12 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
-        background: #164451;
+        transition: transform 0.3s ease, background 0.3s ease;
+      }
+
+      .btn:hover {
+        background: #1b5c6b;
+        transform: scale(1.05);
       }
 
       a {
@@ -823,7 +871,12 @@
           align-items: center;
           gap: 10px;
           background: #164451;
-          border: 0.5px solid #164451;
+          transition: color 0.3s ease;
+        }
+        .btn:hover {
+          background: #1e5a6a;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+          cursor: pointer;
         }
 
         a {
@@ -835,6 +888,17 @@
           letter-spacing: 0.48px;
           text-transform: uppercase;
         }
+      }
+      /* Agregado para animar las tarjetas al pasar el mouse */
+      .service-card {
+        transition: transform 0.3s ease; /* Transición suave */
+      }
+
+      .service-card:hover {
+        transform: scale(
+          1.05
+        ); /* Aumenta el tamaño de la tarjeta al hacer hover */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
       }
     }
   }
@@ -849,6 +913,10 @@
     background-image: url("./img/Acerca\ de\ mobile.png");
     background-size: cover;
     background-position: center;
+
+    .about-section:hover {
+      transform: translateY(-10px);
+    }
 
     .container {
       display: flex;
@@ -898,6 +966,13 @@
         align-items: center;
         gap: 10px;
         border: 0.5px solid #164451;
+        transition: background 0.3s ease, transform 0.3s ease;
+      }
+      .btn:hover {
+        background: #1e5a6a;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transform: scale(1.05); /* Aumenta ligeramente el botón */
+        cursor: pointer;
       }
 
       a {
@@ -1089,10 +1164,10 @@
           border-radius: 8px;
           text-decoration: none;
           transition: background-color 0.3s ease;
-          text-align: center;
+          animation: fadeInUp 1s ease forwards;
         }
 
-        .btn-descargar:hover {
+        .buttom-politica .btn-descargar:hover {
           background-color: #0d2f3a;
         }
       }
@@ -1138,6 +1213,14 @@
           a {
             color: #eee;
             text-decoration: none;
+            transition: transform 0.3s ease, color 0.3s ease,
+              border-color 0.3s ease;
+          }
+
+          a:hover {
+            transform: scale(1.2);
+            color: #faf770;
+            border-color: #faf770;
           }
         }
       }
@@ -1157,7 +1240,14 @@
           align-items: center;
           gap: 10px;
           border: 1px solid #9db1b8;
-          text-decoration: none;
+          transition: transform 0.3s ease, color 0.3s ease,
+            border-color 0.3s ease;
+        }
+
+        a:hover {
+          transform: scale(1.2);
+          color: #faf770;
+          border-color: #faf770;
         }
       }
     }
